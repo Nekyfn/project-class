@@ -32,7 +32,7 @@ a{
     background-color: white;
     padding: 15px;
     border-radius: 10px;
-    margin: 0 10px;
+    margin: 10px;
     transition: .9s ease;
 }
 .buttons{
@@ -41,6 +41,7 @@ a{
     padding: 5px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .logo{
     width: 40px;
@@ -258,11 +259,6 @@ footer{
 }
 @media (max-width:590px) {
     .search-box{
-        display: none;
-    }
-}
-@media (max-width:460px) {
-    .buttons{
         display: none;
     }
 }
