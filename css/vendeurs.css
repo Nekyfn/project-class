@@ -64,6 +64,7 @@ a{
     text-align: center;
     display: flex;
     justify-content: center;
+    animate: heh .5s linear 1;
 }
 button{
     border: none;
@@ -267,4 +268,4 @@ footer{
     .buttons{
         display: none;
     }
-}
+}*/
