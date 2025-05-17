@@ -41,6 +41,7 @@ a{
     padding: 5px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .logo{
     width: 40px;
