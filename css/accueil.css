@@ -1,0 +1,194 @@
+/*This ia actually about the body*/
+body {
+    margin: 0%;
+    padding: 0%;
+    background: #f6f3f3;
+}
+
+/*this is all about header*/
+header{
+    background-color: rgb(247,118,13);
+    text-align: center;
+    padding: 30px;
+    animation: heh .4s linear 1;
+}
+header h1{
+    display: inline;
+    margin: 5px;
+    word-spacing: 8px;
+    letter-spacing: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #44352c;
+}
+header p{
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: .9s ease;
+}
+.buttons{
+    text-align: center;
+    margin: 15px 0px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 40px;
+    display: inline;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    border-radius: 50%;
+    transition: 2s;
+}
+.titre{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Now the input thingy*/
+.search-box{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+button{
+    border: none;
+    padding: 0 15px;
+    background: rgb(247, 118, 13);
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 17px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 1s;
+}
+input{
+    padding: 20px 10rem 20px 20px ;
+    border: 1px solid grey;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 17px;
+}
+::placeholder{
+    width: 100rem;
+}
+
+/*now the content*/
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pizza{
+    display: inline-block;
+    width: 400px;
+}
+.et{
+    width: 100%;
+    animation: imgrotate .5s linear 1;
+}
+.welcom{
+    text-align: right;
+    padding: 0 20px;
+    display: inline-block;
+    animation: imgrotate .5s linear 1;  
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*trying something again*/
+.a1{
+    animation: enter .6s linear 1;
+}
+.a2{
+    animation: enter .8s linear 1;
+}
+.a3{
+    animation: enter 1s linear 1;
+}
+.a4{
+    animation: enter 1.2s linear 1;
+}
+
+/*a little animation?*/
+a:hover{
+    box-shadow: 1px 3px 10px rgb(127, 123, 123);
+    transform: scale(1.05);
+    color: white;
+    background-color: rgb(247, 118, 13);
+}
+.logo:hover{
+    rotate: 360deg;
+}
+
+@keyframes imgrotate{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes enter{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes heh{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/*footer*/
+footer{
+    background:rgb(247, 118, 13);
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+    animation: heh .4s linear 1;
+}
+
+@media (max-width:452px) {
+    a{
+        visibility: hidden;
+    }
+}
+
+@media (max-width:845px) {
+    .welcom {
+        text-align: center;
+    }
+}

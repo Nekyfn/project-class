@@ -1,0 +1,15 @@
+function send(pharow_uuid, instance) {
+    instance = instance || 1;
+    if (pharow_uuid) {
+        var apiEndpoint = '';
+        if (instance === 2) {
+            apiEndpoint = 'https://account-management-test-2024.pharow.com/api/visitors-events/process.php?preprod=PREPROD_DB&pharow_uuid=' + pharow_uuid;
+        } else {
+            apiEndpoint = 'https://account-management-2024.pharow.com/api/visitors-events/process.php?pharow_uuid=' + pharow_uuid;
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', apiEndpoint, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send();
+    }
+}
